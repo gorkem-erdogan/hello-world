@@ -1,0 +1,60 @@
+
+<!-- saved from url=(0351)http://lms.yesevi.edu.tr/akademik50/Courses/AYU/522/537/start.html?AICC_SID=715155&AICC_URL=http://lms.yesevi.edu.tr/akademik50/ASPX/common/aicc2.aspx?contentID=537&SessionID=00900108011501200081005200560104010000730069010000860071005400500043007300990074005401030110010700980111010800840104007901060051010000510077007100970107008300530109010501110061 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
+<meta http-equiv="Content-Type" content="text/html; charset=">
+<script language="Javascript">
+var qs = top.location.search.substr(1, top.location.search.length-1)
+params = qs.split("&")
+var adres = top.location.pathname;
+if (adres.lastIndexOf("/")>0) {
+	var sep = "/";
+} else {
+	var sep = "\\";
+}
+var ls = adres.lastIndexOf(sep);
+var ls2 = adres.lastIndexOf(sep, ls-1);
+var ls3 = adres.lastIndexOf(sep, ls2-1);
+var ls4 = adres.lastIndexOf(sep, ls3-1);
+
+
+var theme = "aqua";
+
+var lrn_path = adres.substr(ls4+1, ls-ls4-1);
+
+
+var tree_height = 5424;
+for (var q=0; q<params.length; q++) {
+	p = params[q].split("=");
+	if (p[0] == "theme") {
+		theme = p[1];
+	}
+}
+
+window.onunload = unload;
+
+function unload() {
+	window.opener.location = window.opener.location;
+}
+
+document.write ("<title>Ahmet Yesevi Üniversitesi</title>");
+</script><title>Ahmet Yesevi Üniversitesi</title>
+
+</head>
+<frameset rows="49,*,48,0" cols="*" frameborder="yes" framespacing="1">
+  <frame src="./Ahmet Yesevi Üniversitesi_files/top.html" name="header" scrolling="no" frameborder="no" framespacing="0" border="0">
+  <frameset cols="244,*" rows="*" name="stage">
+	<!--<frame src="../../../player/tabs.html" name=tabs scrolling=no frameborder=yes border=0 framespacing="0">-->
+	<frameset rows="*,0" cols="*" name="tree">
+		<frame src="./Ahmet Yesevi Üniversitesi_files/left.html" name="left" scrolling="no" frameborder="no" border="0" framespacing="0">
+		<frame src="./Ahmet Yesevi Üniversitesi_files/notal.html" name="notewin" scrolling="no" frameborder="no" border="0" framespacing="0">
+	</frameset>
+	<frame src="./Ahmet Yesevi Üniversitesi_files/main.html" name="main" scrolling="auto" frameborder="no" border="0" framespacing="0">
+  </frameset>
+  <frame src="./Ahmet Yesevi Üniversitesi_files/bottom.html" name="bottom" scrolling="no" frameborder="no" framespacing="0">
+  <frame src="./Ahmet Yesevi Üniversitesi_files/onbeforeunload.html" name="dummy" scrolling="auto" frameborder="no" border="0" framespacing="0">
+</frameset>
+<noframes> 
+<body bgcolor="#FFFFFF" text="#000000" >
+</body>
+</noframes>
+</html>
